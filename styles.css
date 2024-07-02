@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #071013;
+  color: #eaf0ceee;
+}
+
+header {
+  background-color: #0a171bb9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #3d3d3d; */
+  box-shadow: 0px 1px 3px 0.5px rgba(245, 245, 220, 0.58);
+}
+
+header p {
+  margin: 0;
+  font-size: 32px;
+  color: #48a9a6;
+  font-family: "Allura", cursive;
+  font-weight: 700;
+}
+
+header div {
+  font-size: 16px;
+  color: #8d8d8d;
+}
+
+.container {
+  padding: 40px;
+  margin: 32px auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #3d3d3d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  height: 80vh;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.profile-details .name {
+  font-weight: 600;
+  color: #48a9a6;
+  font-family: "Playwrite MX", cursive;
+}
+
+.profile-details .roles span {
+  font-size: 14px;
+  background-color: #3d3d3d;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.profile-details .slack-email {
+  color: #48a9a6;
+  font-size: 16px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  border: 4px solid #48a9a6;
+}
+
+.goals,
+.links {
+  /* margin-top: 40px; */
+  height: 70vh;
+  padding-top: 40px;
+}
+.goals h2,
+.links h2 {
+  font-size: 32px;
+  color: #48a9a6;
+  margin-bottom: 10px;
+}
+
+.goals ul,
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goals li,
+.links li {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* .goals li {
+  color: #8d8d8d;
+} */
+
+.links a {
+  color: #48a9a6;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  header div {
+    margin-top: 10px;
+  }
+}
